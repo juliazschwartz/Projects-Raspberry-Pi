@@ -1,3 +1,19 @@
+#The RFID Automated weighing allows a much faster weighing of animals in the industry or farm.
+#This project was designed for a comercial breeder of parrots, wich is required to daily weight the baby parrots. 
+#In this project, I designed a small and delicated nylon wire containing a RFID microchip inside to 
+#create a provisional ring tied on the ankle of the baby parrot. 
+#A weight balance was adapted to send information to Raspberry Pi, throgh hx711 module (Library: https://github.com/tatobari/hx711py.git).
+#Under the weigth balance, a rfid reader was placed, so when the bird is placed on top of the weigth balance, 
+#the identification of the parrot occurs immediatly, sendind the id to the program in raspberry pi, that compares to the 
+#parrots previously registered in the database.
+#At the same time, the value of the weight given is send to this same program in raspberry pi, wich calibrates and convert to the actual value.
+#Also, the tkinter library was used, to create a graphic interface, on wich the user can acess and control and visualize the program process,
+#which was displayed in a small screen( touch screen).
+
+#This is still in progress, several new funtionalities are going to be implemented soon, as weight history for each baby parrot, statistics of the weights
+#and so on.
+
+
 import RPi.GPIO as GPIO
 import requests
 import tkinter as tk
